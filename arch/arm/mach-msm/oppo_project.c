@@ -9,8 +9,6 @@
 #include <mach/oppo_reserve3.h>
 #include <linux/fs.h>
 
-
-
 /////////////////////////////////////////////////////////////
 
 static struct proc_dir_entry *oppoReserve3 = NULL;

@@ -7,6 +7,8 @@
 #ifndef _OPPO_PROJECT_H_
 #define _OPPO_PROJECT_H_
 
+#define SMEM_PROJECT    135
+
 enum{
 	HW_VERSION__UNKNOWN,
 	HW_VERSION__10, 	//1452mV
