@@ -17,6 +17,7 @@
 #include <mach/oppo_project.h>
 #include <mach/msm_smem.h>
 
+#define SMEM_DRAM_TYPE 136
 
 static struct proc_dir_entry *parent = NULL;
 
