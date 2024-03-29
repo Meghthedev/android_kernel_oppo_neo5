@@ -1651,9 +1651,6 @@ static ssize_t synaptics_rmi4_baseline_show_14017(struct device *dev,
 		struct device_attribute *attr, char *buf)
 {
 	ssize_t num_read_chars = 0;
-    (void)num_read_chars; // Suppress unused variable warning
-
-#if TP_TEST_ENABLE
     int ret = 0;
 	uint8_t x,y;
 	// int tx_datal;
@@ -1662,8 +1659,10 @@ static ssize_t synaptics_rmi4_baseline_show_14017(struct device *dev,
 	uint8_t tmp_l = 0,tmp_h = 0;
 	uint16_t count = 0;
 	// int error_count = 0;
-	uint8_t buffer[9];
+	uint8_t buffer[9];	
+    (void)num_read_chars; // Suppress unused variable warning
 
+#if TP_TEST_ENABLE
 	memset(buffer, 0, sizeof(buffer));
     down(&work_sem);
     disable_irq_nosync(ts_g->client->irq);
